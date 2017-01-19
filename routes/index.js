@@ -6,11 +6,14 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'LIBAPP' });
 });
 
-// router.get('/chidi', function(req, res, next) {
-//   res.render('index', { title: 'Chidi' });
-// });
-
-
+router.post('/login', function (req, res) { // Redirect to either admin or user
+ if (true) {
+ 	res.redirect('/admin');
+ } else{
+ 	res.redirect('/user');
+ }
+  
+});
 
 
 module.exports = router;
