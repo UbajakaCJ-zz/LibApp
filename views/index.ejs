@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+  	<meta charset="UTF-8">
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/libApp.css" media="all">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+
+	<div class="wrapper">
+		<div class="authentication">
+			<!-- <img src="images/lib.png" id="image"> -->
+			<h1 class="front-page"><%= title %></h1>
+    		<p class="front-page">Welcome to <%= title %></p>
+
+			<form action="/login" method="post">
+			<div class="input-control"><input id="Username" placeholder="Email Address " class="input"></div>
+			<div class="input-control"><input id="Password" placeholder="Password" class="input"></div>
+			<div class="input_control">
+				<button type="submit" id="btn" class="btn btn_white">Sign In</button>
+				<!-- Integrate facebook and github -->
+			</div>
+			</form>
+
+
+			<div class="input_control"><span class="authInfo">Not a  member? <a href="#" class="Register">Register</a></span> </div>
+
+		</div>
+
+
+		<div class="footer">
+			<ul class="info">
+				<li class="m-item">User Agreement</li>
+					<li class="m-item">Privacy Policy</li>
+					<li class="m-item">Community Guidelines</li>
+					<li class="m-item">Cookie Policy</li>
+					<li class="m-item">Copyright Policy</li>
+					<li class="m-item">Guest Controls</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- For Firebase -->
+	<script src="\javascripts\firebaseApp.js"></script>
+
   </body>
 </html>
