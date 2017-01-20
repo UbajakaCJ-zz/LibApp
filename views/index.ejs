@@ -15,9 +15,9 @@
 			<h1 class="front-page"><%= title %></h1>
     		<p class="front-page">Welcome to <%= title %></p>
 
-			<form action="/login" method="post">
-			<div class="input-control"><input id="Username" placeholder="Email Address " class="input"></div>
-			<div class="input-control"><input id="Password" placeholder="Password" class="input"></div>
+			<form action="/login" method="post" enctype = "x-www-formurlencoded">
+			<div class="input-control"><input id="Username" name = "username" placeholder="Email Address " class="input"></div>
+			<div class="input-control"><input id="Password" name = "password" placeholder="Password" class="input"></div>
 			<div class="input_control">
 				<button type="submit" id="btn" class="btn btn_white">Sign In</button>
 				<!-- Integrate facebook and github -->

@@ -20,6 +20,10 @@ html, body{
 
 }
 
+.wrap{
+	background-image: url("../images/libVictoria7.jpg");
+}
+
 #image{
 	text-align: center;
 }
@@ -33,6 +37,10 @@ html, body{
     width: 400px;
     height: 250px;
     text-align: center;
+}
+
+.auth{
+	width:100%;
 }
 
 .front-page{
@@ -91,6 +99,13 @@ html, body{
 	margin-right: 45px;
 	list-style: none;
     font-size: 13px;
+}
+
+.libColor{
+	color:#795548;
+	margin-right: 200px;
+
+	
 }
 
 
